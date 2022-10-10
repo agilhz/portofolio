@@ -17,8 +17,13 @@ a {
   --color-1: white;
   --color-2: #08bdba;
   --color-3: #1e283c;
-  --color-4: rgb(240, 240, 240);
-  --color-5: black;
+  --font-size-xx-sm: xx-small;
+  --font-size-x-sm: x-small;
+  --font-size-sm: small;
+  --font-size-m: medium;
+  --font-size-l: large;
+  --font-size-x-l: x-large;
+  --font-size-xx-l: xx-large;
   scroll-behavior: smooth;
 }
 
@@ -94,7 +99,7 @@ header li:link {
 .navbar-brand a {
   color: var(--color-2);
   font-weight: bolder;
-  font-size: large;
+  font-size: var(--font-size-l);
   padding: 0;
 }
 
@@ -192,7 +197,7 @@ main {
 
 .left-beranda h2 {
   font-weight: lighter;
-  font-size: larger;
+  font-size: var(--font-size-l);
 }
 
 .left-beranda a {
@@ -218,11 +223,17 @@ main {
   position: relative;
 }
 
+.right-beranda img {
+  width: 400px;
+}
+
 .svg-right-beranda {
   position: absolute;
   z-index: -10;
   bottom: 0;
   left: 0;
+  /* width: 400px;
+  height: 400px; */
 }
 
 /* tentang saya */
@@ -240,7 +251,7 @@ main {
 #tentang-saya h2 {
   grid-area: h2;
   color: var(--color-2);
-  font-size: medium;
+  font-size: var(--font-size-m);
 }
 
 /* left tentang-saya */
@@ -251,7 +262,7 @@ main {
 }
 
 .left-tentang-saya h3 {
-  font-size: xx-large;
+  font-size: var(--font-size-xx-l);
   margin: 0.2em 0;
 }
 
@@ -262,7 +273,7 @@ main {
 }
 
 .right-tentang-saya h3 {
-  font-size: xx-large;
+  font-size: var(--font-size-xx-l);
   margin: 0.2em 0;
 }
 
@@ -295,11 +306,11 @@ main {
 
 .top-portofolio h2 {
   color: var(--color-2);
-  font-size: medium;
+  font-size: var(--font-size-m);
 }
 
 .top-portofolio h3 {
-  font-size: xx-large;
+  font-size: var(--font-size-xx-l);
   margin: 0.2em 0;
 }
 
@@ -337,7 +348,7 @@ main {
 .bottom-portofolio figcaption {
   background-color: var(--color-1);
   text-align: center;
-  font-size: large;
+  font-size: var(--font-size-l);
   font-weight: 600;
   margin-top: auto;
   background-color: var(--color-2);
@@ -369,12 +380,12 @@ main {
 }
 
 .top-skill h2 {
-  font-size: medium;
+  font-size: var(--font-size-m);
   color: var(--color-2);
 }
 
 .top-skill h3 {
-  font-size: xx-large;
+  font-size: var(--font-size-xx-l);
   margin: 0.2em 0;
   color: var(--color-1);
 }
@@ -417,12 +428,12 @@ main {
 }
 
 .top-sertifikasi h2 {
-  font-size: medium;
+  font-size: var(--font-size-m);
   color: var(--color-2);
 }
 
 .top-sertifikasi h3 {
-  font-size: xx-large;
+  font-size: var(--font-size-xx-l);
   margin: 0.2em 0;
 }
 
@@ -470,12 +481,12 @@ main {
 }
 
 .top-kontak h2 {
-  font-size: medium;
+  font-size: var(--font-size-m);
   color: var(--color-2);
 }
 
 .top-kontak h3 {
-  font-size: xx-large;
+  font-size: var(--font-size-xx-l);
   margin: 0.2em 0;
 }
 
@@ -530,7 +541,7 @@ main {
   border: none;
   color: var(--color-1);
   justify-self: center;
-  font-size: small;
+  font-size: var(--font-size-sm);
 }
 
 .bottom-kontak button:hover {
@@ -716,7 +727,7 @@ footer {
   }
 
   #portofolio figcaption {
-    font-size: medium;
+    font-size: var(--font-size-m);
   }
 
   #skill .bottom-skill {
@@ -752,8 +763,19 @@ footer {
     border-top: 1px solid white;
     padding-top: 1em;
   }
+}
 
-  .bottom-footer p {
-    font-size: large;
+@media (max-width: 576px) {
+  .bottom-sertifikasi img {
+    width: 100%;
+  }
+
+  .right-beranda img {
+    width: 100%;
+  }
+
+  .right-beranda svg {
+    width: 100%;
+    height: 100%;
   }
 }
