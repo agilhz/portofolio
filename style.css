@@ -513,6 +513,7 @@ main {
   height: 25px;
   border: none;
   border-radius: 3px;
+  padding: 5px;
   border: none;
   outline-width: 0;
   background-color: rgb(228, 228, 228);
@@ -526,6 +527,7 @@ main {
   border-radius: 3px;
   border: none;
   background-color: transparent;
+  padding: 5px;
   outline: none;
   background-color: rgb(228, 228, 228);
 }
